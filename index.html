@@ -25,6 +25,8 @@
       rel="stylesheet"
     />
     <title>Document</title>
+    <meta charset="utf-8" />
+    <title>:valid</title>
   </head>
   <body>
     <header class="masthead">
@@ -82,14 +84,28 @@
             <span>Proin iaculis purus consequat sem cure</span>
           </div>
         </div>
-        <form class="your-email">
-          <input class="form" name="name" placeholder="Your Name *" />
-          <input class="form" name="Email" placeholder="Your E-mail *" />
-          <input class="form" name="messag" placeholder="Subject " />
+        <form class="your-email" required>
+          <p>
+            <input
+              class="form"
+              type="name"
+              placeholder="Your Name *"
+              required
+            />
+          </p>
+          <input
+            class="form"
+            type="Email"
+            placeholder="Your E-mail *"
+            required
+          />
+          <input class="form" type="messag" placeholder="Subject " required />
+
           <input
             class="form message"
-            name="message"
+            type="message"
             placeholder="Your message *"
+            required
           />
         </form>
         <button class="subscribe">
